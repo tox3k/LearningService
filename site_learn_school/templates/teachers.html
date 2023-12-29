@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="{% static 'css/style.min.css'%}">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img class="popup__close-image" src="{% static 'img/popup/close.svg'%}" alt=""></button>
+					<div class="popup__body">
+						<div class="popup__title">
+							Вход в аккаунт
+						</div>
+						<div class="popup__forms forms-popup">
+							<div class="forms-popup__inp forms-popup__mail"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Логин / Электронная почта" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__password"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль" class="forms-popup__input input"></div>
+						</div>
+						<div class="popup__link-reg">Если у вас нет аккаунта, <a href="" data-popup="#popup_1">зарегестрируйтесь</a>
+						</div>
+						<button data-close type="submit" class="popup__button auth__button">Авторизоваться</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup_1" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img class="popup__close-image" src="{% static 'img/popup/close.svg'%}" alt=""></button>
+					<div class="popup__body">
+						<div class="popup__title">
+							Регистрация
+						</div>
+						<div class="popup__forms forms-popup">
+							<div class="forms-popup__inp forms-popup__login"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Логин / Юзернейм" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__mail"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Электронная почта" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__password"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__repeat-password _icon-dot"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Повторите пароль" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__name"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="forms-popup__input input">
+							</div>
+							<div class="forms-popup__inp forms-popup__surname"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия" class="forms-popup__input input"></div>
+						</div>
+						<button data-close type="submit" class="popup__button register__button">Зарегистрироваться</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__link-main">Главная</a>
+				<a href="" data-popup="#popup" class="header__name">Фамилия Имя</a>
+			</div>
+		</header>
+
+		<main class="teachers">
+			<div class="teachers__menu menu">
+				<div data-tabs class="teachers__tabs tabs tabs--first">
+					<nav data-tabs-titles class="tabs__navigation tabs__navigation--first">
+						<button type="button" class="tabs__title _tab-active"><img src="{% static 'img/navbar/1.svg'%}" alt=""></button>
+						<button type="button" class="tabs__title"><img src="{% static 'img/navbar/2.svg'%}" alt=""></button>
+						<button type="button" class="tabs__title"><img src="{% static 'img/navbar/3.svg'%}" alt=""></button>
+						<button type="button" class="tabs__title"><img src="{% static 'img/navbar/4.svg'%}" alt=""></button>
+					</nav>
+					<div class="tabs__container">
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__header">
+									<div class="tabs__grade">
+										<div data-spollers class="tabs__spollers spollers">
+											<details class="spollers__item">
+												<summary class="spollers__title">Класс</summary>
+												<div class="spollers__body">
+													<button type="button" class="spollers__element">1А</button>
+													<button type="button" class="spollers__element">1Б</button>
+													<button type="button" class="spollers__element">2А</button>
+													<button type="button" class="spollers__element">2Б</button>
+													<button type="button" class="spollers__element">3А</button>
+													<button type="button" class="spollers__element">3Б</button>
+													<button type="button" class="spollers__element">4А</button>
+													<button type="button" class="spollers__element">4Б</button>
+													<button type="button" class="spollers__element">5А</button>
+													<button type="button" class="spollers__element">5Б</button>
+													<button type="button" class="spollers__element">6А</button>
+													<button type="button" class="spollers__element">6Б</button>
+													<button type="button" class="spollers__element">7А</button>
+													<button type="button" class="spollers__element">7Б</button>
+													<button type="button" class="spollers__element">8А</button>
+													<button type="button" class="spollers__element">8Б</button>
+													<button type="button" class="spollers__element">9А</button>
+													<button type="button" class="spollers__element">9Б</button>
+													<button type="button" class="spollers__element">10А<button>
+															<button type="button" class="spollers__element">10Б<button>
+																	<button type="button" class="spollers__element">11А<button>
+																			<button type="button" class="spollers__element">11Б<button>
+												</div>
+											</details>
+										</div>
+									</div>
+									<div class="tabs__subjects">
+										<div data-spollers class="tabs__spollers spollers">
+											<details class="spollers__item">
+												<summary class="spollers__title">Предмет</summary>
+												<div class="spollers__body">
+													<button type="button" class="spollers__element">Русский</button>
+													<button type="button " class="spollers__element">Математика</button>
+													<button type="button " class="spollers__element">Литература</button>
+												</div>
+											</details>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__table">
+									ТАБЛИЦА С РЕЗУЛЬТАТАМИ ТЕСТОВ ПО УЧЕНИКАМ
+								</div>
+							</div>
+							<div class="tabs__body">
+								123
+							</div>
+							<div class="tabs__body">
+								Вміст третього таба
+							</div>
+							<div class="tabs__body">
+								<!-- <div data-tabs class="tabs__block-tasks tabs tabs--second">
+									<nav data-tabs-titles class="tabs__navigation tabs__navigation--second">
+										<button type="button" class="tabs__button tabs__title _tab-active active"></button>
+										
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											Вміст першого таба
+										</div>
+										<div class="tabs__body">
+											Вміст другого таба
+										</div>
+									</div>
+								</div> -->
+								<div class="tabs__block">
+									<div class="tabs__block">
+										<div class="tabs__number-tasks">
+											<button type="button" class="tabs__button button active"></button>
+
+										</div>
+										<div class="tabs__task">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+										<div class="tabs__variants">
+											<div class="tabs__variant">
+												<span class="tabs__response-number"></span>
+												<p class="tabs__answer"><textarea name="" id="" cols="30" rows="10"></textarea>
+												</p>
+											</div>
+											<div class="tabs__variant">
+												<span class="tabs__response-number"></span>
+												<p class="tabs__answer"><textarea name="" id="" cols="30" rows="10"></textarea>
+												</p>
+											</div>
+											<div class="tabs__variant">
+												<span class="tabs__response-number"></span>
+												<p class="tabs__answer"><textarea name="" id="" cols="30" rows="10"></textarea>
+												</p>
+											</div>
+											<div class="tabs__variant">
+												<span class="tabs__response-number"></span>
+												<p class="tabs__answer"><textarea name="" id="" cols="30" rows="10"></textarea>
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="{% static 'js/app.min.js'%}"></script>
+</body>
+
+</html>

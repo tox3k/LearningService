@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="{% static 'css/style.min.css'%}">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img class="popup__close-image" src="img/popup/close.svg" alt=""></button>
+					<div class="popup__body">
+						<div class="popup__title">
+							Вход в аккаунт
+						</div>
+						<div class="popup__forms forms-popup">
+							<div class="forms-popup__inp forms-popup__mail"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Логин / Электронная почта" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__password"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль" class="forms-popup__input input"></div>
+						</div>
+						<div class="popup__link-reg">Если у вас нет аккаунта, <a href="" data-popup="#popup_1">зарегестрируйтесь</a>
+						</div>
+						<button data-close type="submit" class="popup__button auth__button">Авторизоваться</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup_1" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img class="popup__close-image" src="img/popup/close.svg" alt=""></button>
+					<div class="popup__body">
+						<div class="popup__title">
+							Регистрация
+						</div>
+						<div class="popup__forms forms-popup">
+							<div class="forms-popup__inp forms-popup__login"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Логин / Юзернейм" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__mail"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Электронная почта" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__password"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__repeat-password _icon-dot"><input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Повторите пароль" class="forms-popup__input input"></div>
+							<div class="forms-popup__inp forms-popup__name"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="forms-popup__input input">
+							</div>
+							<div class="forms-popup__inp forms-popup__surname"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия" class="forms-popup__input input"></div>
+						</div>
+						<button data-close type="submit" class="popup__button register__button">Зарегистрироваться</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__link-main">Главная</a>
+				<a href="" data-popup="#popup" class="header__name">Фамилия Имя</a>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__decor decor-item">
+				<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="decor-item__image decor-item__image_1"><img src="{% static 'img/main-decor/1.svg'%}" alt=""></div>
+				<div data-prlx-cx="10" data-prlx-cy="10" data-prlx-mouse class="decor-item__image decor-item__image_2">
+					<img src="{% static 'img/main-decor/2.svg'%}" alt="">
+				</div>
+				<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="decor-item__image decor-item__image_3"><img src="{% static 'img/main-decor/3.svg'%}" alt=""></div>
+				<div data-prlx-cx="10" data-prlx-cy="10" data-prlx-mouse data-prlx-dyr class="decor-item__image decor-item__image_4"><img src="{% static 'img/main-decor/4.svg'%}" alt=""></div>
+				<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="decor-item__image decor-item__image_5"><img src="{% static 'img/main-decor/5.svg'%}" alt=""></div>
+				<div data-prlx-cx="10" data-prlx-cy="10" data-prlx-mouse data-prlx-dxr class="decor-item__image decor-item__image_6"><img src="{% static 'img/main-decor/6.svg'%}" alt=""></div>
+				<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="decor-item__image decor-item__image_7"><img src="{% static 'img/main-decor/7.svg'%}" alt=""></div>
+				<div data-prlx-cx="10" data-prlx-cy="10" data-prlx-mouse class="decor-item__image decor-item__image_8">
+					<img src="{% static 'img/main-decor/8.svg'%}" alt="">
+				</div>
+			</div>
+			<div class="page__tests tests">
+				<div class="tests__container">
+					<div class="tests__block">
+						<div class="tests__header">
+							<div class="tests__title">ТВОИ ТЕСТЫ</div>
+							<div class="tests__passed">
+								<div class="tests__done">
+									1
+								</div>
+								<span class="test__slash">/</span>
+								<div class="tests__total">
+									6
+								</div>
+							</div>
+						</div>
+						<div class="tests__cards cards">
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+							<a href="" class="cards__card">
+								<div class="cards__item">Математика</div>
+								<div class="cards__theme">Тест по теме
+									“Решение систем
+									квадратных уравнений”
+								</div>
+								<div class="cards__try">
+									<p class="cards__attempts">Попыток:</p>
+									<div class="cards__used">1</div>
+									<div class="cards__slash">/</div>
+									<div class="cards__total">2</div>
+								</div>
+								<div class="cards__scores">
+									<div class="cards__text">Оценка:</div>
+									<div class="cards__score"><span>5</span></div>
+								</div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="{% static 'js/app.min.js'%}"></script>
+</body>
+
+</html>
